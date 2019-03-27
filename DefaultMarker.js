@@ -45,8 +45,7 @@ export default class DefaultMarker extends React.Component {
                 : [styles.markerStyle, styles.disabled]
             }
           />
-          <Text style={{ fontSize: responsiveFontSize(2) }}>
-            {' '}
+          <Text style={{ fontSize: responsiveFontSize(1.3) }}>
             {this.props.currentValue}
           </Text>
         </View>
