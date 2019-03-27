@@ -9,7 +9,10 @@ import {
   Text,
 } from 'react-native';
 
-import { responsiveFontSize } from 'react-native-responsive-dimensions';
+import {
+  responsiveFontSize,
+  responsiveHeight,
+} from 'react-native-responsive-dimensions';
 
 const ViewPropTypes = require('react-native').ViewPropTypes || View.propTypes;
 
@@ -30,6 +33,7 @@ export default class DefaultMarker extends React.Component {
         <View
           style={{
             flexDirection: 'column',
+            justifyContent: 'flex-start',
             alignItems: 'center',
           }}
         >
@@ -45,7 +49,7 @@ export default class DefaultMarker extends React.Component {
                 : [styles.markerStyle, styles.disabled]
             }
           />
-          <Text style={{ fontSize: responsiveFontSize(1.3) }}>
+          <Text style={{ fontSize: responsiveFontSize(1.2) }}>
             {this.props.currentValue}
           </Text>
         </View>
